@@ -1,37 +1,33 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 
+//create your first component
 const Home = () => {
-	const [lightColor, setLightColor] = useState("");
+  const [selectedColor, setSelectedColor] = useState(null);
 
-	return (
-		<div id="container">
-			<div className="trafficTop"></div>
-			<div className="trafficBox">
-				<div
-					className={lightColor === "red" ? "red redOff" : "redOff"}
-					onClick={() => {
-						setLightColor("red");
-					}}></div>
-				<div
-					className={
-						lightColor === "orange"
-							? "orange orangeOff"
-							: "orangeOff"
-					}
-					onClick={() => {
-						setLightColor("orange");
-					}}></div>
-				<div
-					className={
-						lightColor === "green" ? "green GreenOff" : "greenOff"
-					}
-					onClick={() => {
-						setLightColor("green");
-					}}></div>
-			</div>
-		</div>
-	);
+  return (
+    <>
+      <div className="pole"></div>
+      <div className="trafficLight">
+        <div
+          onClick={() => setSelectedColor("red")}
+          className={
+            "light red" + (selectedColor === "red" ? " glow" : "")}
+        ></div>
+        <div
+          onClick={() => setSelectedColor("yellow")}
+          className={
+            "light yellow" + (selectedColor === "yellow" ? " glow" : "")
+          }
+        ></div>
+        <div
+          onClick={() => setSelectedColor("green")}
+          className={
+            "light green" + (selectedColor === "green" ? " glow" : "")}
+        ></div>
+      </div>
+    </>
+  );
 };
 
 export default Home;
-

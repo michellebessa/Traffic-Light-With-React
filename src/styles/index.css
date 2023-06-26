@@ -1,70 +1,40 @@
-.trafficTop{
-  margin: auto;
-  padding-top: 5%;
+
+.pole {
+  height: 100px;
   width: 20px;
-  height: 60px;
   background-color: black;
-}
-.trafficBox{
-  padding-top: 1%;
   margin: auto;
+}
+
+.trafficLight {
+  display: flex;
+  flex-direction: column;
   background-color: black;
+  width: 150px;
+  height: 350px;
+  border-radius: 25px;
+  margin: auto;
+}
+
+.light {
+  margin: auto;
   width: 100px;
-  height: 270px;
+  height: 100px;
+  border-radius: 50%;
 }
-.redOff{
-  margin: auto;
+
+.red {
   background-color: red;
-  width: 80px;
-  height: 80px;
-  border-radius: 70%;
 }
-.orangeOff{
-  margin: auto;
-  background-color: orange;
-  width: 80px;
-  height: 80px;
-  border-radius: 70%;
-  
-}
-.greenOff{
-  margin: auto;
+
+.green {
   background-color: green;
-  width: 80px;
-  height: 80px;
-  border-radius: 70%;
 }
-.red{
-  margin: auto;
-  background-color: red;
-  background-image: radial-gradient(brown, transparent);
-  width: 80px;
-  height: 80px;
-  border-radius: 70%;
-  box-shadow: 
-  0 0 20px #111 inset,
-  0 0 10px red;
-}
-.orange{
-  margin: auto;
+
+.yellow {
   background-color: yellow;
-  background-image: radial-gradient(orange, transparent);
-  width: 80px;
-  height: 80px;
-  border-radius: 70%;
-  box-shadow: 
-  0 0 20px #111 inset,
-  0 0 10px yellow;
-  
 }
-.green{
-  margin: auto;
-  background-color: green;
-  background-image: radial-gradient(lime, transparent);
-  width: 80px;
-  height: 80px;
-  border-radius: 70%;
-  box-shadow: 
-  0 0 20px #111 inset,
-  0 0 10px lime;
+
+.glow {
+  box-shadow: 0px 0px 18px 4px white;
 }
